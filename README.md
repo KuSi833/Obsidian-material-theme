@@ -1,8 +1,9 @@
 # Obsidian-material-theme
 A theme for Obsidian inspired by the Material and Atom theme.
-Only the dark theme is supported.
 
 This theme builds upon the Atom theme: https://github.com/kognise/obsidian-atom
+
+Only the dark theme is supported.
 
 ## Modifications
 Some aspects which were further modified are:
