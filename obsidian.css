@@ -9,9 +9,9 @@
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
   --background-modifier-success: #539126;
-  --background-modifier-error: #3d0000;
+  --background-modifier-error: var(--accent-purple); /* Delete promt buttons */
   --background-modifier-error-rgb: 61, 0, 0;
-  --background-modifier-error-hover: #470000;
+  --background-modifier-error-hover: var(--red); /* Delete promt buttons hover */
   --background-modifier-cover: rgba(0, 0, 0, 0.6);
   --text-accent: var(--accent-blue);         /*"New note" and other icons hover, also hyperlinks*/
   --text-accent-hover: #69bafd;
@@ -34,11 +34,11 @@
   --panel-border-color: #18191e;
 
   --text-title-h1: var(--accent-blue);
-  --text-title-h2: var(--purple);
+  --text-title-h2: var(--accent-purple);
   --text-title-h3: var(--green);
   --text-title-h4: var(--red);
   --text-title-h5: var(--yellow);
-  --text-title-h6: var(--orange);
+  --text-title-h6: var(--accent-blue);
 
   --gray-1: #5C6370;
   --gray-2: #abb2bf;
@@ -47,6 +47,7 @@
   --green: #98c379;
   --aqua: #56b6c2;
   --purple: #c678dd;
+  --accent-purple: #9a52c4;
   --blue: #61afef;
   --accent-blue: #2F8DEF;
   --yellow: #e5c07b;
@@ -471,12 +472,12 @@ color: var(--file-name-color) !important;
 
 :root
 {
-    --font-size-h1: 26px;
-    --font-size-h2: 22px;
-    --font-size-h3: 22px;
-    --font-size-h4: 22px;
-    --font-size-h5: 22px;
-    --font-size-h6: 22px;
+    --font-size-h1: 32px;
+    --font-size-h2: 24px;
+    --font-size-h3: 18.72px;
+    --font-size-h4: 18.72px;
+    --font-size-h5: 18.72px;
+    --font-size-h6: 18.72px;
 } 
 
 /* Font customization */
