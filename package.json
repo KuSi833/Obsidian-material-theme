@@ -1,0 +1,22 @@
+{
+  "name": "obsidian-material-theme",
+  "version": "1.0.0",
+  "description": "Material theme for Obsidian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/material.scss material.css"
+  },
+  "keywords": [
+    "Obsidian",
+    "Theme"
+  ],
+  "author": "Karlo Milicic",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "sass": "^1.38.2"
+  }
+}
