@@ -200,6 +200,12 @@ li {
   font-weight: 500;
 }
 
+.markdown-preview-view.is-readable-line-width .markdown-preview-section,
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: 900px !important;
+  line-height: 26px;
+}
+
 .dataview.table-view-table {
   background-color: var(--background-secondary);
   border-radius: 5px;
