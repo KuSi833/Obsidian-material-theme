@@ -35,55 +35,25 @@ body {
   }
 }
 
-.cm-s-obsidian pre.HyperMD-codeblock,
-.cm-s-obsidian span.cm-inline-code,
-.cm-s-obsidian
+// In edit mode
+.cm-s-obsidian {
+  pre.HyperMD-codeblock,
+  span.cm-inline-code,
   span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
-.markdown-preview-view code {
-  color: $green;
-}
+  .markdown-preview-view code {
+    color: $green;
+  }
 
-.cm-s-obsidian span.cm-inline-code,
-.cm-s-obsidian span.cm-math,
-.cm-s-obsidian span.hmd-fold-math-placeholder {
-  // font-weight: 500;
-  font-style: normal;
+  span {
+    .cm-inline-code,
+    .cm-math,
+    .hmd-fold-math-placeholder {
+      font-style: normal;
+    }
+  }
 }
 
 .markdown-preview-view code {
   vertical-align: text-top;
   word-break: break-word;
 }
-
-// code[class*='language-'],
-// pre[class*='language-'] {
-//   text-align: left !important;
-//   white-space: pre !important;
-//   word-spacing: normal !important;
-//   word-break: normal !important;
-//   word-wrap: normal !important;
-//   line-height: 1.5 !important;
-//   -moz-tab-size: 4 !important;
-//   -o-tab-size: 4 !important;
-//   tab-size: 4 !important;
-//   -webkit-hyphens: none !important;
-//   -moz-hyphens: none !important;
-//   -ms-hyphens: none !important;
-//   hyphens: none !important;
-// }
-
-// /* Code blocks */
-// pre[class*='language-'] {
-//   padding: 1em !important;
-//   margin: 0.5em 0 !important;
-//   overflow: auto !important;
-//   color: red !important;
-// }
-
-// /* Inline code */
-// :not(pre) > code[class*='language-'] {
-//   padding: 0.1em !important;
-//   border-radius: 0.3em !important;
-//   white-space: normal !important;
-//   color: red !important;
-// }

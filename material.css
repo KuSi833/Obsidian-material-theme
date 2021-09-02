@@ -36,13 +36,12 @@ body .markdown-source-view code:not([class]) {
 .cm-s-obsidian pre.HyperMD-codeblock,
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
-.markdown-preview-view code {
+.cm-s-obsidian .markdown-preview-view code {
   color: #98c379;
 }
-
-.cm-s-obsidian span.cm-inline-code,
-.cm-s-obsidian span.cm-math,
-.cm-s-obsidian span.hmd-fold-math-placeholder {
+.cm-s-obsidian span .cm-inline-code,
+.cm-s-obsidian span .cm-math,
+.cm-s-obsidian span .hmd-fold-math-placeholder {
   font-style: normal;
 }
 
@@ -226,12 +225,10 @@ blockquote {
   cursor: pointer;
   vertical-align: baseline;
 }
-
 .markdown-preview-view .task-list-item-checkbox:checked {
   border: none;
   background-color: var(--interactive-accent);
 }
-
 .markdown-preview-view .task-list-item-checkbox:checked::before {
   content: " ";
   position: absolute;
@@ -257,9 +254,31 @@ blockquote {
   color: #69bafd;
 }
 
+.nav-file-title,
+.nav-folder-title {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
+.nav-file-title-content,
+.nav-folder-title-content {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
 .dataview.table-view-table {
   background-color: var(--background-secondary);
   border-radius: 5px;
+}
+
+mjx-container[jax=CHTML] {
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  color: #98c379;
 }
 
 :root,

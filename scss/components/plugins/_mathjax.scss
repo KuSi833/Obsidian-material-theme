@@ -1,0 +1,8 @@
+@use '../../abstracts' as *;
+
+mjx-container[jax='CHTML'] {
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  color: $green;
+}
