@@ -1,5 +1,4 @@
-$test: blue;
-
-body {
-  background-color: $test;
-}
+@use './abstracts' as a;
+@use './base';
+@use './components';
+@use './themes';

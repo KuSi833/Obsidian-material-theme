@@ -1,5 +1,61 @@
-body {
-  background-color: blue;
+:root {
+  --font-monospace: "Fira Code", "Source Code Pro", monospace;
+  --default-font: Roboto, Segoe UI Emoji;
+}
+
+.markdown-preview-view {
+  font-family: var(--default-font);
+}
+
+:root,
+.theme-dark {
+  --background-primary: #212121;
+  /*background of note*/
+  --background-primary-alt: #1d1d1d;
+  /*Code block*/
+  --background-secondary: #1a1a1a;
+  /*file viewer*/
+  --background-secondary-alt: #0d0d0d;
+  /*sidebar*/
+  --background-accent: #000;
+  --background-modifier-border: #424958;
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #539126;
+  /* Delete promt buttons */
+  --background-modifier-error: #9a52c4;
+  --background-modifier-error-rgb: #3d0000;
+  --background-modifier-error-hover: #e75153;
+  --background-modifier-cover: rgba(0, 0, 0, 0.6);
+  /*"New note" and other icons hover, also hyperlinks*/
+  --text-accent: #2f8def;
+  --text-accent-hover: #69bafd;
+  --text-normal: #dcddde;
+  --text-muted: #888;
+  /* File viewer text */
+  --text-faint: #6b6b6b;
+  --text-error: #e16d76;
+  --text-error-hover: #c9626a;
+  --text-highlight-bg: rgba(255, 255, 0, 0.4);
+  --text-selection: rgba(0, 122, 255, 0.2);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #20242b;
+  --interactive-hover: #353b47;
+  /*highlited open note in file viewer*/
+  --interactive-accent: #2f8def;
+  --interactive-accent-rgb: #4c78cc;
+  --interactive-accent-hover: #5082df;
+  --scrollbar-active-thumb-bg: rgba(231, 3, 3, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.01);
+  --panel-border-color: #18191e;
+  --text-title-h1: #2f8def;
+  --text-title-h2: #9a52c4;
+  --text-title-h3: #ecb958;
+  --text-title-h4: #98c379;
+  --text-title-h5: #98c379;
+  --text-title-h6: #98c379;
 }
 
 /*# sourceMappingURL=material.css.map */

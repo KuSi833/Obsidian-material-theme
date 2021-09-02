@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss/material.scss material.css"
+    "dev": "npm-run-all --parallel sass copy",
+    "sass": "sass --watch scss:.",
+    "copy": "copy-and-watch --watch material.css \"C:/Users/KABO/Google Drive/ObsiNotes/.obsidian/themes\""
   },
   "keywords": [
     "Obsidian",
@@ -17,6 +19,8 @@
     "node-sass": "^6.0.1"
   },
   "devDependencies": {
+    "copy-and-watch": "^0.1.5",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.38.2"
   }
 }
