@@ -1,0 +1,70 @@
+.tag {
+  background-color: var(--text-accent);
+  border: none;
+  color: white;
+  font-size: var(--font-size-h6);
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+.tag:hover {
+  border: none;
+  background-color: var(--text-accent-hover) !important;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  color: white;
+  border-radius: 14px;
+}
+.tag[href^='#obsidian'] {
+  background-color: #4d3ca6;
+}
+.tag[href^='#issue'] {
+  background-color: indianred;
+}
+.tag[href^='#🌱'] {
+  background-color: yellowgreen;
+}
+.tag[href^='#🌿'] {
+  background-color: seagreen;
+}
+.tag[href^='#🌲'] {
+  background-color: green;
+}
+.tag[href^='#📍'] {
+  background-color: #cf352e;
+}
+.tag[href^='#🧍'] {
+  background-color: #109474;
+}
+.tag[href^='#🍽'] {
+  background-color: orange;
+}
+.tag[href^='#🛠'] {
+  background-color: #63462d;
+}
+.tag[href^='#technical'] {
+  background-color: var(--gray-1);
+}
+.tag[href^='#active'] {
+  background-color: #6ba741;
+}
+.tag[href^='#inactive'] {
+  background-color: indianred;
+}
+.tag[href^='#leetcode/easy'] {
+  background-color: #6ba741;
+}
+.tag[href^='#leetcode/medium'] {
+  background-color: var(--yellow);
+}
+.tag[href^='#leetcode/hard'] {
+  background-color: var(--red);
+}

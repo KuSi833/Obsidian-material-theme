@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --font-monospace: "Fira Code", "Source Code Pro", monospace;
   --default-font: Roboto, Segoe UI Emoji;
@@ -7,6 +8,41 @@
   font-family: var(--default-font);
 }
 
+body .markdown-preview-view code,
+body .markdown-preview-view pre,
+body .markdown-source-view code,
+body .markdown-source-view pre {
+  font-family: var(--font-monospace);
+  background-color: var(--background-primary-alt);
+  border-radius: 2.5px;
+  padding: 10px 4px;
+  font-size: 0.9em;
+}
+body .markdown-preview-view code:not([class]),
+body .markdown-source-view code:not([class]) {
+  padding: 2.5px 4px;
+  color: #98c379 !important;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.markdown-preview-view code {
+  color: #98c379;
+}
+
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.markdown-preview-view code {
+  vertical-align: text-top;
+  word-break: break-word;
+}
+
 .cm-header-1,
 .markdown-preview-view h1 {
   font-weight: 550;
@@ -14,30 +50,35 @@
   color: var(--text-title-h1);
 }
 
+.cm-header-2,
 .markdown-preview-view h2 {
   font-weight: 500;
   font-size: 1.5em;
   color: var(--text-title-h2);
 }
 
+.cm-header-3,
 .markdown-preview-view h3 {
   font-weight: 500;
   font-size: 1.2em;
   color: var(--text-title-h3);
 }
 
+.cm-header-4,
 .markdown-preview-view h4 {
   font-weight: 500;
   font-size: 1.2em;
   color: var(--text-title-h4);
 }
 
+.cm-header-5,
 .markdown-preview-view h5 {
   font-weight: 500;
   font-size: 1em;
   color: var(--text-title-h5);
 }
 
+.cm-header-6,
 .markdown-preview-view h6 {
   font-weight: 500;
   font-size: 0.8em;
@@ -68,8 +109,100 @@ li {
   padding-bottom: 0.5px;
 }
 
+.tag {
+  background-color: var(--text-accent);
+  border: none;
+  color: white;
+  font-size: var(--font-size-h6);
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.tag:hover {
+  border: none;
+  background-color: var(--text-accent-hover) !important;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  color: white;
+  border-radius: 14px;
+}
+
+.tag[href^="#obsidian"] {
+  background-color: #4d3ca6;
+}
+
+.tag[href^="#issue"] {
+  background-color: indianred;
+}
+
+.tag[href^="#🌱"] {
+  background-color: yellowgreen;
+}
+
+.tag[href^="#🌿"] {
+  background-color: seagreen;
+}
+
+.tag[href^="#🌲"] {
+  background-color: green;
+}
+
+.tag[href^="#📍"] {
+  background-color: #cf352e;
+}
+
+.tag[href^="#🧍"] {
+  background-color: #109474;
+}
+
+.tag[href^="#🍽"] {
+  background-color: orange;
+}
+
+.tag[href^="#🛠"] {
+  background-color: #63462d;
+}
+
+.tag[href^="#technical"] {
+  background-color: var(--gray-1);
+}
+
+.tag[href^="#active"] {
+  background-color: #6ba741;
+}
+
+.tag[href^="#inactive"] {
+  background-color: indianred;
+}
+
+.tag[href^="#leetcode/easy"] {
+  background-color: #6ba741;
+}
+
+.tag[href^="#leetcode/medium"] {
+  background-color: var(--yellow);
+}
+
+.tag[href^="#leetcode/hard"] {
+  background-color: var(--red);
+}
+
 .view-header-title {
   font-weight: 500;
+}
+
+.dataview.table-view-table {
+  background-color: var(--background-secondary);
+  border-radius: 5px;
 }
 
 :root,
@@ -78,7 +211,7 @@ li {
   /*background of note*/
   --background-primary-alt: #1d1d1d;
   /*Code block*/
-  --background-secondary: #1a1a1a;
+  --background-secondary: #1b1b1b;
   /*file viewer*/
   --background-secondary-alt: #0d0d0d;
   /*sidebar*/
