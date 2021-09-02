@@ -1,5 +1,7 @@
 @forward './code';
-@forward './headers';
-@forward './hyperlinks';
-@forward './list-elements';
-@forward './tags';
+@forward './header';
+@forward './hyperlink';
+@forward './list-element';
+@forward './tag';
+@forward './blockquote';
+@forward './checkbox';
