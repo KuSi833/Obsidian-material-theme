@@ -1,0 +1,42 @@
+@use '../../abstracts' as *;
+
+.cm-header-1,
+.markdown-preview-view h1 {
+  @include weight-size-color(550, 2em, var(--text-title-h1));
+}
+.markdown-preview-view h2 {
+  @include weight-size-color(500, 1.5em, var(--text-title-h2));
+}
+.markdown-preview-view h3 {
+  @include weight-size-color(500, 1.2em, var(--text-title-h3));
+}
+.markdown-preview-view h4 {
+  @include weight-size-color(500, 1.2em, var(--text-title-h4));
+}
+.markdown-preview-view h5 {
+  @include weight-size-color(500, 1em, var(--text-title-h5));
+}
+.markdown-preview-view h6 {
+  @include weight-size-color(500, 0.8em, var(--text-title-h6));
+}
+
+.markdown-preview-section:not(:first-child) h1,
+.markdown-preview-section:not(:first-child) h2,
+.markdown-preview-section:not(:first-child) h3,
+.markdown-preview-section:not(:first-child) h4,
+.markdown-preview-section:not(:first-child) h5,
+.markdown-preview-section:not(:first-child) h6 {
+  margin-top: 40px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+.view-header-title {
+  font-weight: 600;
+}

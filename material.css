@@ -7,6 +7,43 @@
   font-family: var(--default-font);
 }
 
+.cm-header-1,
+.markdown-preview-view h1 {
+  font-weight: 550;
+  font-size: 2em;
+  color: var(--text-title-h1);
+}
+
+.markdown-preview-view h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: var(--text-title-h2);
+}
+
+.markdown-preview-view h3 {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--text-title-h3);
+}
+
+.markdown-preview-view h4 {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: var(--text-title-h4);
+}
+
+.markdown-preview-view h5 {
+  font-weight: 500;
+  font-size: 1em;
+  color: var(--text-title-h5);
+}
+
+.markdown-preview-view h6 {
+  font-weight: 500;
+  font-size: 0.8em;
+  color: var(--text-title-h6);
+}
+
 .markdown-preview-section:not(:first-child) h1,
 .markdown-preview-section:not(:first-child) h2,
 .markdown-preview-section:not(:first-child) h3,
