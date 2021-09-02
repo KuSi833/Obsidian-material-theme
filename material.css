@@ -53,18 +53,6 @@
   margin-top: 40px !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-b,
-.view-header-title {
-  font-weight: 600;
-}
-
 a,
 .markdown-preview-view .internal-link {
   text-decoration: none;
@@ -78,6 +66,10 @@ a:hover,
 li {
   padding-top: 0.5px;
   padding-bottom: 0.5px;
+}
+
+.view-header-title {
+  font-weight: 500;
 }
 
 :root,
