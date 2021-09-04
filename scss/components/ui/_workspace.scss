@@ -33,3 +33,9 @@
     color: var(--interactive-accent);
   }
 }
+
+// Seems to have no effect
+// .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+//   /*Sidebar resize handle*/
+//   height: calc(100% - 36px);
+// }

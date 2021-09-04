@@ -216,7 +216,7 @@ body .markdown-preview-view .task-list-item-checkbox {
   margin: 0;
   filter: none;
   outline: none;
-  margin-right: 4px;
+  margin-right: 6px;
   margin-bottom: 2px;
   cursor: pointer;
   vertical-align: baseline;
@@ -297,11 +297,15 @@ body .markdown-preview-view .file-embed {
   border: none;
 }
 
-.workspace-leaf.mod-active .view-header-icon {
+.workspace-leaf.mod-active .view-header {
+  transition: border-bottom 0.3s;
+  border-bottom: 2px solid var(--interactive-accent);
+}
+.workspace-leaf.mod-active .view-header .view-header-icon {
   color: var(--file-name-color);
 }
 .workspace-leaf .view-header-icon:hover {
-  color: var(--text-accent);
+  color: var(--interactive-accent);
 }
 
 .search-result-file-title {
@@ -364,6 +368,11 @@ body .markdown-preview-view .file-embed {
 .workspace-ribbon.side-dock-ribbon .workspace-ribbon-collapse-btn:hover {
   color: var(--text-accent);
 }
+.workspace-ribbon.side-dock-ribbon .workspace-ribbon-collapse-btn {
+  margin-top: 36px;
+  padding: 20px 0px 8px 0px;
+  align-self: center;
+}
 .workspace-ribbon.side-dock-ribbon.mod-left {
   flex-direction: column;
   flex: 0 0 50px;
@@ -380,7 +389,7 @@ body .markdown-preview-view .file-embed {
 }
 
 .dataview.table-view-table {
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary-alt);
   border-radius: 5px;
 }
 

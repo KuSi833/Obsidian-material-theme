@@ -10,6 +10,11 @@
     // Purpose: Color
     color: var(--text-accent);
   }
+  .workspace-ribbon-collapse-btn {
+    margin-top: 36px;
+    padding: 20px 0px 8px 0px;
+    align-self: center;
+  }
 
   // Element: Left sidedock ribbon
   &.mod-left {
