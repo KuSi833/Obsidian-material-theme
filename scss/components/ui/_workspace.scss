@@ -13,11 +13,23 @@
   border: none;
 }
 
+// Element: Note
 .workspace-leaf {
-  &.mod-active .view-header-icon {
-    color: var(--file-name-color);
+  // Element: Active
+  &.mod-active {
+    // Element: Header
+    .view-header {
+      // Purpose: Bottom border color transition
+      transition: border-bottom 0.3s;
+      border-bottom: 2px solid var(--interactive-accent);
+      // Element: Icon
+      .view-header-icon {
+        // Purpose: COlor
+        color: var(--file-name-color);
+      }
+    }
   }
   .view-header-icon:hover {
-    color: var(--text-accent);
+    color: var(--interactive-accent);
   }
 }
