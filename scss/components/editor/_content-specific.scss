@@ -3,15 +3,15 @@
 @include editor-preview-component {
   // Colors
   .green {
-    color: var(--green) !important;
+    color: $green-2 !important;
   }
 
   .yellow {
-    color: var(--yellow) !important;
+    color: $yellow-2 !important;
   }
 
   .red {
-    color: var(--red) !important;
+    color: $red !important;
   }
   .indianred {
     color: indianred !important;
@@ -33,6 +33,7 @@
     }
     &.na {
       background-color: gray;
+      color: black;
     }
     &.linear-logarithmic {
       background-color: orange;

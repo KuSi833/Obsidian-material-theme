@@ -1,8 +1,10 @@
+@use '../../abstracts' as *;
+
 .tag {
   background-color: var(--text-accent);
   border: none;
   color: white;
-  font-size: var(--font-size-h6);
+  font-size: $font-size-h6;
   padding: 1px 8px;
   text-align: center;
   text-decoration: none;
@@ -20,7 +22,7 @@
   display: inline-block;
   margin: 0px 0px;
   cursor: pointer;
-  color: white;
+  color: $white;
   border-radius: 14px;
 }
 .tag[href^='#obsidian'] {
@@ -51,7 +53,7 @@
   background-color: #63462d;
 }
 .tag[href^='#technical'] {
-  background-color: var(--gray-1);
+  background-color: $gray-1;
 }
 .tag[href^='#active'] {
   background-color: #6ba741;
@@ -60,11 +62,11 @@
   background-color: indianred;
 }
 .tag[href^='#leetcode/easy'] {
-  background-color: #6ba741;
+  background-color: $green-2;
 }
 .tag[href^='#leetcode/medium'] {
-  background-color: var(--yellow);
+  background-color: $yellow-2;
 }
 .tag[href^='#leetcode/hard'] {
-  background-color: var(--red);
+  background-color: $red;
 }

@@ -1,20 +1,20 @@
+// Colors
 $black: #000;
 
+$gray-2: #abb2bf; // Tokens
+$gray-8: #888; // --text-muted
 $gray-1: #5c6370; // Tokens
-$gray-2: #abb2bf;
-$gray-3: #212121;
-$gray-4: #1d1d1d;
-$gray-5: #1b1b1b;
-$gray-6: #0d0d0d;
-$gray-7: #424958;
-$gray-8: #888;
-$gray-9: rgb(107, 107, 107);
-$gray-10: #20242b;
+$gray-9: rgb(107, 107, 107); // --text-faint
 $gray-11: #353b47;
+$gray-7: #424242;
+$gray-14: #18191e;
+$gray-3: #212121; // --background-primary
+$gray-4: #1d1d1d; // --background-primary alt
+$gray-5: #1b1b1b; // --background-secondary
+$gray-6: #0d0d0d; // --background-secondary-alt
+$gray-10: #20242b;
 $gray-12: rgba(255, 255, 255, 0.05);
 $gray-13: rgba(255, 255, 255, 0.01);
-$gray-14: #18191e;
-$gray-15: #dcddde;
 $gray-16: #313131;
 
 $dark-gray-1: rgba(0, 0, 0, 0.3);
@@ -23,14 +23,14 @@ $dark-gray-3: rgba(0, 0, 0, 0.6);
 
 $red: #e75153;
 $red-2: rgb(61, 0, 0);
-$red-3: #e16d76;
+$red-3: indianred;
 $red-4: #c9626a;
 $red-5: rgba(231, 3, 3, 0.2);
 
 $orange: #f77f45;
 
 $green: #98c379;
-$green-2: #539126;
+$green-2: #68ad37;
 $green-3: rgba(255, 255, 0, 0.4);
 
 $purple: #c678dd;
@@ -48,6 +48,15 @@ $blue-3: #5082df;
 $dark-blue: rgba(0, 122, 255, 0.2);
 
 $yellow: #ecb958;
+$yellow-2: #d89f34;
 $light-yellow: #ffda97;
 
 $white: #dcddde;
+
+// Sizes
+$font-size-h1: 2em;
+$font-size-h2: 1.5em;
+$font-size-h3: 1.2em;
+$font-size-h4: 1.2em;
+$font-size-h5: 1em;
+$font-size-h6: 0.8em;

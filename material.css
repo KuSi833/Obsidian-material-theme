@@ -118,7 +118,7 @@ li {
   background-color: var(--text-accent);
   border: none;
   color: white;
-  font-size: var(--font-size-h6);
+  font-size: 0.8em;
   padding: 1px 8px;
   text-align: center;
   text-decoration: none;
@@ -137,7 +137,7 @@ li {
   display: inline-block;
   margin: 0px 0px;
   cursor: pointer;
-  color: white;
+  color: #dcddde;
   border-radius: 14px;
 }
 
@@ -178,7 +178,7 @@ li {
 }
 
 .tag[href^="#technical"] {
-  background-color: var(--gray-1);
+  background-color: #5c6370;
 }
 
 .tag[href^="#active"] {
@@ -190,15 +190,15 @@ li {
 }
 
 .tag[href^="#leetcode/easy"] {
-  background-color: #6ba741;
+  background-color: #68ad37;
 }
 
 .tag[href^="#leetcode/medium"] {
-  background-color: var(--yellow);
+  background-color: #d89f34;
 }
 
 .tag[href^="#leetcode/hard"] {
-  background-color: var(--red);
+  background-color: #e75153;
 }
 
 body .markdown-preview-view blockquote {
@@ -305,13 +305,13 @@ body .markdown-preview-view .cm-strong:not(.cm-hmd-internal-link):not(.cm-format
 }
 
 body .markdown-preview-view .green {
-  color: var(--green) !important;
+  color: #68ad37 !important;
 }
 body .markdown-preview-view .yellow {
-  color: var(--yellow) !important;
+  color: #d89f34 !important;
 }
 body .markdown-preview-view .red {
-  color: var(--red) !important;
+  color: #e75153 !important;
 }
 body .markdown-preview-view .indianred {
   color: indianred !important;
@@ -330,6 +330,7 @@ body .markdown-preview-view code.logarithmic {
 }
 body .markdown-preview-view code.na {
   background-color: gray;
+  color: black;
 }
 body .markdown-preview-view code.linear-logarithmic {
   background-color: orange;
@@ -359,6 +360,10 @@ body .markdown-preview-view code.linear-logarithmic {
 }
 .workspace-leaf .view-header-icon:hover {
   color: var(--interactive-accent);
+}
+
+.modal-content.community-plugin {
+  padding-right: 0em;
 }
 
 .search-result-file-title {
@@ -495,11 +500,11 @@ mjx-container[jax=CHTML] {
   --background-secondary-alt: #0d0d0d;
   /*sidebar*/
   --background-accent: #000;
-  --background-modifier-border: #424958;
+  --background-modifier-border: #424242;
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
-  --background-modifier-success: #539126;
+  --background-modifier-success: #68ad37;
   /* Delete promt buttons */
   --background-modifier-error: #9a52c4;
   --background-modifier-error-rgb: #3d0000;
@@ -512,7 +517,8 @@ mjx-container[jax=CHTML] {
   --text-muted: #888;
   /* File viewer text */
   --text-faint: #6b6b6b;
-  --text-error: #e16d76;
+  /* Sidebar Icons */
+  --text-error: indianred;
   --text-error-hover: #c9626a;
   --text-highlight-bg: rgba(255, 255, 0, 0.4);
   --text-selection: rgba(0, 122, 255, 0.2);

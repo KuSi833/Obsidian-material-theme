@@ -34,6 +34,12 @@
   }
 }
 
+// Community plugin tab
+.modal-content.community-plugin {
+  // Scroll-bar was overlapping with X
+  padding-right: 0em;
+}
+
 // Seems to have no effect
 // .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
 //   /*Sidebar resize handle*/
