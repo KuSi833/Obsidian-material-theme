@@ -12,3 +12,12 @@
   .view-header {
   border: none;
 }
+
+.workspace-leaf {
+  &.mod-active .view-header-icon {
+    color: var(--file-name-color);
+  }
+  .view-header-icon:hover {
+    color: var(--text-accent);
+  }
+}
