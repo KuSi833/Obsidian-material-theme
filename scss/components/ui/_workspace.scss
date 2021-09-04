@@ -40,8 +40,8 @@
   padding-right: 0em;
 }
 
-// Seems to have no effect
-// .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
-//   /*Sidebar resize handle*/
-//   height: calc(100% - 36px);
-// }
+// Sidebar resize handle
+.workspace-leaf-resize-handle {
+  // Removes ugly notch
+  height: calc(100% - 36px) !important;
+}

@@ -46,6 +46,7 @@ body .markdown-preview-view :not(pre) > code:not([class]) {
 .cm-s-obsidian span .cm-math,
 .cm-s-obsidian span .hmd-fold-math-placeholder {
   font-style: normal;
+  color: #98c379;
 }
 
 .cm-header-1,
@@ -194,7 +195,7 @@ li {
 }
 
 .tag[href^="#leetcode/medium"] {
-  background-color: #d89f34;
+  background-color: #e0a12b;
 }
 
 .tag[href^="#leetcode/hard"] {
@@ -308,7 +309,7 @@ body .markdown-preview-view .green {
   color: #68ad37 !important;
 }
 body .markdown-preview-view .yellow {
-  color: #d89f34 !important;
+  color: #e0a12b !important;
 }
 body .markdown-preview-view .red {
   color: #e75153 !important;
@@ -364,6 +365,10 @@ body .markdown-preview-view code.linear-logarithmic {
 
 .modal-content.community-plugin {
   padding-right: 0em;
+}
+
+.workspace-leaf-resize-handle {
+  height: calc(100% - 36px) !important;
 }
 
 .search-result-file-title {
