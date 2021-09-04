@@ -12,3 +12,13 @@
   overflow: hidden;
   display: block;
 }
+
+.nav-file.is-active {
+  --background-secondary-alt: var(--interactive-accent);
+  --text-normal: #ffffff;
+}
+
+.nav-file:not(.is-active):hover .nav-file-title,
+.nav-folder:hover .nav-folder-content {
+  background-color: transparent;
+}

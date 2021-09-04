@@ -1,4 +1,6 @@
-.markdown-preview-view {
+@use '../../abstracts' as *;
+
+@include editor-preview-component {
   .task-list-item-checkbox {
     -webkit-appearance: none;
     box-sizing: border-box;

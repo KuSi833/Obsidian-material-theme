@@ -4,3 +4,11 @@
   max-width: 900px !important;
   line-height: 26px;
 }
+
+// Is likely overridden by Sliding Panels
+.workspace
+  > .workspace-split
+  > .workspace-leaf:first-of-type:last-of-type
+  .view-header {
+  border: none;
+}

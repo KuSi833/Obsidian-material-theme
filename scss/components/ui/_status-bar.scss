@@ -1,0 +1,22 @@
+.status-bar,
+.side-dock.mod-right,
+.side-dock.mod-left {
+  border-color: var(--panel-border-color);
+  border-width: 1px;
+}
+
+.status-bar {
+  --bar-vertical-padding: 4px;
+  --bar-height: calc(22px + (var(--bar-vertical-padding) * 2));
+  line-height: 20px;
+  padding: 0 20px;
+  height: var(--bar-height);
+  max-height: var(--bar-height);
+  min-height: var(--bar-height);
+  overflow: hidden;
+}
+
+.status-bar-item > * {
+  padding-top: var(--bar-vertical-padding) !important;
+  padding-bottom: var(--bar-vertical-padding) !important;
+}

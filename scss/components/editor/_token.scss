@@ -1,0 +1,79 @@
+@use '../../abstracts' as *;
+
+// Code Theme
+.token {
+  &.comment,
+  &.prolog,
+  &.doctype,
+  &.cdata {
+    color: $gray-1 !important;
+  }
+
+  &.punctuation {
+    color: $gray-2 !important;
+  }
+
+  &.selector,
+  &.tag {
+    color: $red !important;
+  }
+
+  &.property,
+  &.boolean,
+  &.number,
+  &.constant,
+  &.symbol,
+  &.attr-name,
+  &.deleted {
+    color: $orange !important;
+  }
+
+  &.string,
+  &.char,
+  &.attr-value,
+  &.builtin,
+  &.inserted {
+    color: $green !important;
+  }
+
+  &.operator,
+  &.entity,
+  &.url,
+  &.language-css .string,
+  &.style .string {
+    color: $aqua !important;
+  }
+
+  &.atrule,
+  &.keyword {
+    color: $purple !important;
+  }
+
+  &.function,
+  &.macro.property {
+    color: $blue !important;
+  }
+
+  &.class-name {
+    color: $yellow !important;
+  }
+
+  &.regex,
+  &.important,
+  &.variable {
+    color: $purple !important;
+  }
+
+  &.important,
+  &.bold {
+    font-weight: bold !important;
+  }
+
+  &.italic {
+    font-style: italic !important;
+  }
+
+  &.entity {
+    cursor: help !important;
+  }
+}
