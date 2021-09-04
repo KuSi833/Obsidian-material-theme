@@ -1,0 +1,41 @@
+// Element: Side dock ribbons (left and right)
+.workspace-ribbon.side-dock-ribbon {
+  // Purpose: Color
+  color: var(--background-primary) !important;
+  background-color: var(--background-secondary-alt) !important;
+
+  // Element: Sidebar Buttons
+  .side-dock-ribbon-action:hover,
+  .workspace-ribbon-collapse-btn:hover {
+    // Purpose: Color
+    color: var(--text-accent);
+  }
+
+  // Element: Left sidedock ribbon
+  &.mod-left {
+    // Purpose: Ordering elements and width
+    flex-direction: column;
+    flex: 0 0 50px;
+
+    // Purpose: ushing the last three buttons to the bottom
+    .side-dock-settings {
+      margin: auto 0px 0px 0px;
+    }
+  }
+}
+
+// Element: Left sidebar
+.workspace-tabs {
+  // Element: Sidebar Header Space
+  .workspace-tab-header-container {
+    // Purpose: Space
+    height: 36px;
+    // Element: Buttons (File Explorer, Recent Files, Search...)
+    .workspace-tab-header-inner:hover {
+      .workspace-tab-header-inner-icon {
+        // Purpose: Color
+        color: var(--text-accent);
+      }
+    }
+  }
+}
