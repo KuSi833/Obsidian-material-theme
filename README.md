@@ -13,4 +13,8 @@ Only the dark theme is supported.
 
 ## Acknowledgements
 
+![preview](./screenshots/preview.PNG)
+![source](./screenshots/source.PNG)
+![settings](./screenshots/settings.PNG)
+
 Elements have been inspired by the [Atom theme](https://github.com/kognise/obsidian-atom)
