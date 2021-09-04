@@ -1,0 +1,11 @@
+@use '../../abstracts' as *;
+
+@include editor-source-and-preview-component {
+  // Strong
+  // In preview mode
+  strong,   
+  // In Source Mode
+  .cm-strong:not(.cm-hmd-internal-link):not(.cm-formatting-link) {
+    color: $yellow;
+  }
+}

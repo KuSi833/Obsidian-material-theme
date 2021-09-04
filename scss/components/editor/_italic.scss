@@ -1,0 +1,11 @@
+@use '../../abstracts' as *;
+
+@include editor-source-and-preview-component {
+  // Italic
+  // In preview mode
+  em,   
+  // In Source Mode
+  .cm-em:not(.cm-hmd-internal-link):not(.cm-formatting-link) {
+    color: $light-yellow;
+  }
+}

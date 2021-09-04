@@ -283,6 +283,20 @@ body .markdown-preview-view .file-embed {
   cursor: help !important;
 }
 
+body .markdown-source-view em,
+body .markdown-source-view .cm-em:not(.cm-hmd-internal-link):not(.cm-formatting-link),
+body .markdown-preview-view em,
+body .markdown-preview-view .cm-em:not(.cm-hmd-internal-link):not(.cm-formatting-link) {
+  color: #ffda97;
+}
+
+body .markdown-source-view strong,
+body .markdown-source-view .cm-strong:not(.cm-hmd-internal-link):not(.cm-formatting-link),
+body .markdown-preview-view strong,
+body .markdown-preview-view .cm-strong:not(.cm-hmd-internal-link):not(.cm-formatting-link) {
+  color: #ecb958;
+}
+
 .view-header-title {
   font-weight: 600;
 }
