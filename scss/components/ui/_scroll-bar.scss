@@ -1,0 +1,9 @@
+@use '../../abstracts' as *;
+@use 'sass:color';
+
+::-webkit-scrollbar-thumb {
+  background-color: $gray-16;
+  &:active {
+    background-color: lighten($gray-16, 10);
+  }
+}

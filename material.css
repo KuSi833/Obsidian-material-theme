@@ -242,6 +242,10 @@ body .markdown-preview-view .file-embed {
   border-radius: 4px;
   background-color: var(--background-primary-alt);
 }
+body .markdown-preview-view .markdown-embed {
+  border: none !important;
+  padding: 0em 1em;
+}
 
 .token.comment, .token.prolog, .token.doctype, .token.cdata {
   color: #5c6370 !important;
@@ -359,33 +363,45 @@ body .markdown-preview-view .cm-strong:not(.cm-hmd-internal-link):not(.cm-format
 }
 
 .status-bar {
-  --bar-vertical-padding: 4px;
-  --bar-height: calc(22px + (var(--bar-vertical-padding) * 2));
-  line-height: 20px;
-  padding: 0 20px;
-  height: var(--bar-height);
-  max-height: var(--bar-height);
-  min-height: var(--bar-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
   overflow: hidden;
+  background-color: var(--background-secondary);
+  min-height: 28px;
 }
-
-.status-bar-item > * {
-  padding-top: var(--bar-vertical-padding) !important;
-  padding-bottom: var(--bar-vertical-padding) !important;
+.status-bar .status-bar-item {
+  padding: 0.2em 0em 0.2em 2em;
+  height: 2em;
+}
+.status-bar .sync-status-icon {
+  height: 24px;
+  width: 24px;
+  padding-right: 6px;
 }
 
 .workspace-ribbon.side-dock-ribbon {
   color: var(--background-primary) !important;
   background-color: var(--background-secondary-alt) !important;
+  border-color: var(--background-secondary-alt) !important;
 }
 .workspace-ribbon.side-dock-ribbon .side-dock-ribbon-action:hover,
 .workspace-ribbon.side-dock-ribbon .workspace-ribbon-collapse-btn:hover {
   color: var(--text-accent);
 }
+.workspace-ribbon.side-dock-ribbon .side-dock-ribbon-action svg {
+  width: 24px;
+  height: 24px;
+}
 .workspace-ribbon.side-dock-ribbon .workspace-ribbon-collapse-btn {
   margin-top: 36px;
   padding: 20px 0px 8px 0px;
   align-self: center;
+}
+.workspace-ribbon.side-dock-ribbon .workspace-ribbon-collapse-btn svg {
+  width: 20px;
+  height: 20px;
 }
 .workspace-ribbon.side-dock-ribbon.mod-left {
   flex-direction: column;
@@ -402,6 +418,13 @@ body .markdown-preview-view .cm-strong:not(.cm-hmd-internal-link):not(.cm-format
   color: var(--text-accent);
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: #313131;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #4b4b4b;
+}
+
 .dataview.table-view-table {
   background-color: var(--background-primary-alt);
   border-radius: 5px;
@@ -416,6 +439,14 @@ mjx-container[jax=CHTML] {
 
 .abcjs-decoration {
   stroke: var(--text-normal);
+}
+
+.kanban-plugin {
+  background-color: var(--background-primary) !important;
+}
+
+.kanban-plugin__lane {
+  background-color: #1d1d1d !important;
 }
 
 :root,

@@ -6,17 +6,21 @@
 }
 
 .status-bar {
-  --bar-vertical-padding: 4px;
-  --bar-height: calc(22px + (var(--bar-vertical-padding) * 2));
-  line-height: 20px;
-  padding: 0 20px;
-  height: var(--bar-height);
-  max-height: var(--bar-height);
-  min-height: var(--bar-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
   overflow: hidden;
-}
+  background-color: var(--background-secondary);
+  min-height: 28px;
+  .status-bar-item {
+    padding: 0.2em 0em 0.2em 2em;
+    height: 2em;
+  }
 
-.status-bar-item > * {
-  padding-top: var(--bar-vertical-padding) !important;
-  padding-bottom: var(--bar-vertical-padding) !important;
+  .sync-status-icon {
+    height: 24px;
+    width: 24px;
+    padding-right: 6px;
+  }
 }
