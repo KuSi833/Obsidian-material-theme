@@ -297,6 +297,13 @@ body .markdown-preview-view .file-embed {
   border: none;
 }
 
+.workspace-leaf.mod-active .view-header-icon {
+  color: var(--file-name-color);
+}
+.workspace-leaf .view-header-icon:hover {
+  color: var(--text-accent);
+}
+
 .search-result-file-title {
   color: #69bafd;
 }
@@ -349,6 +356,29 @@ body .markdown-preview-view .file-embed {
   padding-bottom: var(--bar-vertical-padding) !important;
 }
 
+.workspace-ribbon.side-dock-ribbon {
+  color: var(--background-primary) !important;
+  background-color: var(--background-secondary-alt) !important;
+}
+.workspace-ribbon.side-dock-ribbon .side-dock-ribbon-action:hover,
+.workspace-ribbon.side-dock-ribbon .workspace-ribbon-collapse-btn:hover {
+  color: var(--text-accent);
+}
+.workspace-ribbon.side-dock-ribbon.mod-left {
+  flex-direction: column;
+  flex: 0 0 50px;
+}
+.workspace-ribbon.side-dock-ribbon.mod-left .side-dock-settings {
+  margin: auto 0px 0px 0px;
+}
+
+.workspace-tabs .workspace-tab-header-container {
+  height: 36px;
+}
+.workspace-tabs .workspace-tab-header-container .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
+  color: var(--text-accent);
+}
+
 .dataview.table-view-table {
   background-color: var(--background-secondary);
   border-radius: 5px;
@@ -359,6 +389,10 @@ mjx-container[jax=CHTML] {
   outline: none;
   font-size: 20px;
   color: #98c379;
+}
+
+.abcjs-decoration {
+  stroke: var(--text-normal);
 }
 
 :root,

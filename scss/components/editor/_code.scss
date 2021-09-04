@@ -49,3 +49,46 @@
     }
   }
 }
+
+// Could turn out to be useful? Right know can't figure out usage.
+// Inherited from Atom theme
+
+// pre.line-numbers {
+//   position: relative !important;
+//   padding-left: 3.8em !important;
+//   counter-reset: linenumber !important;
+// }
+
+// pre.line-numbers > code {
+//   position: relative !important;
+// }
+
+// .line-numbers .line-numbers-rows {
+//   position: absolute !important;
+//   pointer-events: none !important;
+//   top: 0 !important;
+//   font-size: 100% !important;
+//   left: -3.8em !important;
+//   width: 3em !important; /* works for line-numbers below 1000 lines */
+//   letter-spacing: -1px !important;
+//   border-right: 0 !important;
+
+//   -webkit-user-select: none !important;
+//   -moz-user-select: none !important;
+//   -ms-user-select: none !important;
+//   user-select: none !important;
+// }
+
+// .line-numbers-rows > span {
+//   pointer-events: none !important;
+//   display: block !important;
+//   counter-increment: linenumber !important;
+// }
+
+// .line-numbers-rows > span:before {
+//   content: counter(linenumber) !important;
+//   color: var(--syntax-gray-1) !important;
+//   display: block !important;
+//   padding-right: 0.8em !important;
+//   text-align: right !important;
+// }
