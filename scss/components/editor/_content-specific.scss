@@ -1,0 +1,42 @@
+@use '../../abstracts' as *;
+
+@include editor-preview-component {
+  // Colors
+  .green {
+    color: var(--green) !important;
+  }
+
+  .yellow {
+    color: var(--yellow) !important;
+  }
+
+  .red {
+    color: var(--red) !important;
+  }
+  .indianred {
+    color: indianred !important;
+  }
+
+  // Time/Spatial Complexity
+  code {
+    &.constant {
+      background-color: green !important;
+      color: black;
+    }
+    &.linear {
+      background-color: #fee227;
+      color: black;
+    }
+    &.logarithmic {
+      background-color: yellowgreen;
+      color: black;
+    }
+    &.na {
+      background-color: gray;
+    }
+    &.linear-logarithmic {
+      background-color: orange;
+      color: black;
+    }
+  }
+}

@@ -26,18 +26,21 @@ body .markdown-preview-view pre {
   -ms-hyphens: none !important;
   hyphens: none !important;
 }
-body .markdown-source-view code:not([class]),
-body .markdown-preview-view code:not([class]) {
+body .markdown-source-view :not(pre) > code,
+body .markdown-preview-view :not(pre) > code {
   padding: 0.1em 0.2em;
-  color: #98c379 !important;
   white-space: normal;
+}
+body .markdown-source-view :not(pre) > code:not([class]),
+body .markdown-preview-view :not(pre) > code:not([class]) {
+  color: #98c379 !important;
 }
 
 .cm-s-obsidian pre.HyperMD-codeblock,
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
 .cm-s-obsidian .markdown-preview-view code {
-  color: #98c379;
+  color: #dcddde;
 }
 .cm-s-obsidian span .cm-inline-code,
 .cm-s-obsidian span .cm-math,
@@ -299,6 +302,38 @@ body .markdown-source-view .cm-strong:not(.cm-hmd-internal-link):not(.cm-formatt
 body .markdown-preview-view strong,
 body .markdown-preview-view .cm-strong:not(.cm-hmd-internal-link):not(.cm-formatting-link) {
   color: #ecb958;
+}
+
+body .markdown-preview-view .green {
+  color: var(--green) !important;
+}
+body .markdown-preview-view .yellow {
+  color: var(--yellow) !important;
+}
+body .markdown-preview-view .red {
+  color: var(--red) !important;
+}
+body .markdown-preview-view .indianred {
+  color: indianred !important;
+}
+body .markdown-preview-view code.constant {
+  background-color: green !important;
+  color: black;
+}
+body .markdown-preview-view code.linear {
+  background-color: #fee227;
+  color: black;
+}
+body .markdown-preview-view code.logarithmic {
+  background-color: yellowgreen;
+  color: black;
+}
+body .markdown-preview-view code.na {
+  background-color: gray;
+}
+body .markdown-preview-view code.linear-logarithmic {
+  background-color: orange;
+  color: black;
 }
 
 .view-header-title {

@@ -25,10 +25,14 @@
     hyphens: none !important;
   }
   // Inline Code Only
-  code:not([class]) {
+  :not(pre) > code {
     padding: 0.1em 0.2em;
-    color: $green !important;
     white-space: normal;
+
+    // Classles
+    &:not([class]) {
+      color: $green !important;
+    }
   }
 }
 
@@ -38,7 +42,7 @@
   span.cm-inline-code,
   span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
   .markdown-preview-view code {
-    color: $green;
+    color: $white;
   }
 
   span {
