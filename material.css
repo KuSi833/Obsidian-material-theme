@@ -13,7 +13,6 @@ body .markdown-preview-view pre {
   padding: 1em;
   font-size: 0.9em;
   text-align: left !important;
-  white-space: pre !important;
   word-spacing: normal !important;
   word-break: normal !important;
   word-wrap: normal !important;
@@ -367,10 +366,6 @@ body .markdown-preview-view code.linear-logarithmic {
   padding-right: 0em;
 }
 
-.workspace-leaf-resize-handle {
-  height: calc(100% - 36px) !important;
-}
-
 .search-result-file-title {
   color: #69bafd;
 }
@@ -461,6 +456,10 @@ body .markdown-preview-view code.linear-logarithmic {
 }
 .workspace-tabs .workspace-tab-header-container .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
   color: var(--text-accent);
+}
+
+.workspace-leaf-resize-handle {
+  height: calc(100% - 36px) !important;
 }
 
 ::-webkit-scrollbar-thumb {

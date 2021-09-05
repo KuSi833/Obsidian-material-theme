@@ -56,3 +56,9 @@
     }
   }
 }
+
+// Sidebar resize handle
+.workspace-leaf-resize-handle {
+  // Removes ugly notch
+  height: calc(100% - 36px) !important;
+}
