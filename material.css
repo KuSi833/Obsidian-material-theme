@@ -181,6 +181,10 @@ li {
   background-color: #5c6370;
 }
 
+.tag[href^="#📑"] {
+  background-color: #9a52c4;
+}
+
 .tag[href^="#active"] {
   background-color: #6ba741;
 }

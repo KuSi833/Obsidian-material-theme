@@ -1,0 +1,12 @@
+@use '../../abstracts' as *;
+
+// Wanted to override Obsidian flashing but couldn't get it to work
+// @include editor-preview-component {
+//   .is-flashing * {
+//     // h2[data-heading='Coding Projects'] {
+//     // color: red !important;
+//     // background-color: var(--background-primary) !important;
+//     background-color: red !important;
+//     // border-radius: 5px !important;
+//   }
+// }

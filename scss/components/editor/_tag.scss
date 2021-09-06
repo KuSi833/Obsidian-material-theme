@@ -55,6 +55,9 @@
 .tag[href^='#technical'] {
   background-color: $gray-1;
 }
+.tag[href^='#📑'] {
+  background-color: $accent-purple;
+}
 .tag[href^='#active'] {
   background-color: #6ba741;
 }
