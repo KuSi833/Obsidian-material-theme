@@ -41,7 +41,7 @@
   background-color: green;
 }
 .tag[href^='#📍'] {
-  background-color: #cf352e;
+  background-color: $red-6;
 }
 .tag[href^='#🧍'] {
   background-color: #109474;
@@ -52,11 +52,14 @@
 .tag[href^='#🛠'] {
   background-color: #63462d;
 }
-.tag[href^='#technical'] {
+.tag[href^='#⚙️'] {
   background-color: $gray-1;
 }
 .tag[href^='#📑'] {
   background-color: $accent-purple;
+}
+.tag[href^='#🎯'] {
+  background-color: $red-6;
 }
 .tag[href^='#active'] {
   background-color: #6ba741;

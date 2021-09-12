@@ -1,4 +1,5 @@
 @use '../../abstracts' as *;
+@use 'sass:color';
 
 @include editor-preview-component {
   // Colors
@@ -19,25 +20,36 @@
 
   // Time/Spatial Complexity
   code {
+    &.constant,
+    &.linear,
+    &.logarithmic,
+    &.linearithmic,
+    &.polynomial,
+    &.exponential {
+      color: $black;
+    }
+
     &.constant {
-      background-color: green !important;
-      color: black;
+      background-color: green;
     }
     &.linear {
       background-color: #fee227;
-      color: black;
     }
     &.logarithmic {
       background-color: yellowgreen;
-      color: black;
     }
     &.na {
       background-color: gray;
-      color: black;
+      color: $black;
     }
-    &.linear-logarithmic {
+    &.linearithmic {
       background-color: orange;
-      color: black;
+    }
+    &.polynomial {
+      background-color: $red-3;
+    }
+    &.exponential {
+      background-color: $red-6;
     }
   }
 }

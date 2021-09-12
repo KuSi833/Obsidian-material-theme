@@ -177,12 +177,16 @@ li {
   background-color: #63462d;
 }
 
-.tag[href^="#technical"] {
+.tag[href^="#⚙️"] {
   background-color: #5c6370;
 }
 
 .tag[href^="#📑"] {
   background-color: #9a52c4;
+}
+
+.tag[href^="#🎯"] {
+  background-color: #cf352e;
 }
 
 .tag[href^="#active"] {
@@ -320,25 +324,30 @@ body .markdown-preview-view .red {
 body .markdown-preview-view .indianred {
   color: indianred !important;
 }
+body .markdown-preview-view code.constant, body .markdown-preview-view code.linear, body .markdown-preview-view code.logarithmic, body .markdown-preview-view code.linearithmic, body .markdown-preview-view code.polynomial, body .markdown-preview-view code.exponential {
+  color: #000;
+}
 body .markdown-preview-view code.constant {
-  background-color: green !important;
-  color: black;
+  background-color: green;
 }
 body .markdown-preview-view code.linear {
   background-color: #fee227;
-  color: black;
 }
 body .markdown-preview-view code.logarithmic {
   background-color: yellowgreen;
-  color: black;
 }
 body .markdown-preview-view code.na {
   background-color: gray;
-  color: black;
+  color: #000;
 }
-body .markdown-preview-view code.linear-logarithmic {
+body .markdown-preview-view code.linearithmic {
   background-color: orange;
-  color: black;
+}
+body .markdown-preview-view code.polynomial {
+  background-color: indianred;
+}
+body .markdown-preview-view code.exponential {
+  background-color: #cf352e;
 }
 
 .view-header-title {
@@ -483,6 +492,11 @@ mjx-container[jax=CHTML] {
   outline: none;
   font-size: 20px;
   color: #98c379;
+}
+mjx-container[jax=CHTML] .mjx-c3A,
+mjx-container[jax=CHTML] .mjx-c27F9,
+mjx-container[jax=CHTML] .mjx-c27FA {
+  color: #dcddde;
 }
 
 .abcjs-decoration {

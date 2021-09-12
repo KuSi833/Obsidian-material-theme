@@ -5,4 +5,11 @@ mjx-container[jax='CHTML'] {
   outline: none;
   font-size: 20px;
   color: $green;
+
+  .mjx-c3A, // such at (:)
+  .mjx-c27F9, // implies (==>)
+  .mjx-c27FA // if and only if (<==>)
+  {
+    color: $white;
+  }
 }
