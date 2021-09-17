@@ -10,8 +10,7 @@ body .markdown-preview-view pre {
   font-family: var(--font-monospace);
   background-color: var(--background-primary-alt);
   border-radius: 2.5px;
-  padding: 1em;
-  font-size: 0.9em;
+  font-size: 0.95em;
   text-align: left !important;
   word-spacing: normal !important;
   word-break: normal !important;
@@ -197,15 +196,27 @@ li {
   background-color: indianred;
 }
 
-.tag[href^="#leetcode/easy"] {
+.tag[href^="#solved"] {
   background-color: #68ad37;
 }
 
-.tag[href^="#leetcode/medium"] {
+.tag[href^="#todo"] {
   background-color: #e0a12b;
 }
 
-.tag[href^="#leetcode/hard"] {
+.tag[href^="#unsolved"] {
+  background-color: #e75153;
+}
+
+.tag[href^="#easy"] {
+  background-color: #68ad37;
+}
+
+.tag[href^="#medium"] {
+  background-color: #e0a12b;
+}
+
+.tag[href^="#hard"] {
   background-color: #e75153;
 }
 
@@ -495,7 +506,8 @@ mjx-container[jax=CHTML] {
 }
 mjx-container[jax=CHTML] .mjx-c3A,
 mjx-container[jax=CHTML] .mjx-c27F9,
-mjx-container[jax=CHTML] .mjx-c27FA {
+mjx-container[jax=CHTML] .mjx-c27FA,
+mjx-container[jax=CHTML] .mjx-c3D {
   color: #dcddde;
 }
 

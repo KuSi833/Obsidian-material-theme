@@ -67,12 +67,23 @@
 .tag[href^='#inactive'] {
   background-color: indianred;
 }
-.tag[href^='#leetcode/easy'] {
+
+// Leetcode Tags
+.tag[href^='#solved'] {
   background-color: $green-2;
 }
-.tag[href^='#leetcode/medium'] {
+.tag[href^='#todo'] {
   background-color: $yellow-2;
 }
-.tag[href^='#leetcode/hard'] {
+.tag[href^='#unsolved'] {
+  background-color: $red;
+}
+.tag[href^='#easy'] {
+  background-color: $green-2;
+}
+.tag[href^='#medium'] {
+  background-color: $yellow-2;
+}
+.tag[href^='#hard'] {
   background-color: $red;
 }
