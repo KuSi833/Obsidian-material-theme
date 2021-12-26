@@ -172,6 +172,10 @@ li {
   background-color: orange;
 }
 
+.tag[href^="#item"] {
+  background-color: #4caf50;
+}
+
 .tag[href^="#🛠"] {
   background-color: #63462d;
 }
