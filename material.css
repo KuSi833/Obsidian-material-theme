@@ -335,6 +335,10 @@ body .markdown-preview-view .red {
 body .markdown-preview-view .indianred {
   color: indianred !important;
 }
+body .markdown-preview-view code mjx-container {
+  color: #000;
+  font-size: 110%;
+}
 body .markdown-preview-view code.constant, body .markdown-preview-view code.linear, body .markdown-preview-view code.logarithmic, body .markdown-preview-view code.linearithmic, body .markdown-preview-view code.polynomial, body .markdown-preview-view code.exponential {
   color: #000;
 }
@@ -501,7 +505,7 @@ body .markdown-preview-view code.exponential {
 mjx-container[jax=CHTML] {
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 1.1em;
   color: #98c379;
 }
 mjx-container[jax=CHTML] .mjx-c3A,
