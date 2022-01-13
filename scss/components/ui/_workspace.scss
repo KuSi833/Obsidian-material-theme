@@ -1,11 +1,14 @@
 //  Content width
 .markdown-preview-view.is-readable-line-width .markdown-preview-section,
 .markdown-source-view.is-readable-line-width .cm-contentContainer {
-  // .markdown-source-view.is-readable-line-width .CodeMirror {
+  // .markdown-source-view.is-readable-line-width .CodeMirror { # legacy
   max-width: 900px !important;
   line-height: 26px;
   .cm-content {
     max-width: 100%;
+    .cm-line {
+      max-width: 100% !important;
+    }
   }
 }
 

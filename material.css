@@ -386,6 +386,10 @@ body .markdown-preview-view code.exponential {
 .markdown-source-view.is-readable-line-width .cm-contentContainer .cm-content {
   max-width: 100%;
 }
+.markdown-preview-view.is-readable-line-width .markdown-preview-section .cm-content .cm-line,
+.markdown-source-view.is-readable-line-width .cm-contentContainer .cm-content .cm-line {
+  max-width: 100% !important;
+}
 
 .workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
   border: none;
