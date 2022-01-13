@@ -49,44 +49,44 @@ body .markdown-preview-view :not(pre) > code:not([class]) {
 
 .cm-header-1,
 .markdown-preview-view h1 {
-  font-weight: 550;
-  font-size: 2em;
-  color: var(--text-title-h1);
+  font-weight: 550 !important;
+  font-size: 2em !important;
+  color: var(--text-title-h1) !important;
 }
 
 .cm-header-2,
 .markdown-preview-view h2 {
-  font-weight: 500;
-  font-size: 1.5em;
-  color: var(--text-title-h2);
+  font-weight: 500 !important;
+  font-size: 1.5em !important;
+  color: var(--text-title-h2) !important;
 }
 
 .cm-header-3,
 .markdown-preview-view h3 {
-  font-weight: 500;
-  font-size: 1.2em;
-  color: var(--text-title-h3);
+  font-weight: 500 !important;
+  font-size: 1.2em !important;
+  color: var(--text-title-h3) !important;
 }
 
 .cm-header-4,
 .markdown-preview-view h4 {
-  font-weight: 500;
-  font-size: 1.2em;
-  color: var(--text-title-h4);
+  font-weight: 500 !important;
+  font-size: 1.2em !important;
+  color: var(--text-title-h4) !important;
 }
 
 .cm-header-5,
 .markdown-preview-view h5 {
-  font-weight: 500;
-  font-size: 1em;
-  color: var(--text-title-h5);
+  font-weight: 500 !important;
+  font-size: 1em !important;
+  color: var(--text-title-h5) !important;
 }
 
 .cm-header-6,
 .markdown-preview-view h6 {
-  font-weight: 500;
-  font-size: 0.8em;
-  color: var(--text-title-h6);
+  font-weight: 500 !important;
+  font-size: 0.8em !important;
+  color: var(--text-title-h6) !important;
 }
 
 .markdown-preview-section:not(:first-child) h1,
@@ -205,6 +205,10 @@ li {
 }
 
 .tag[href^="#todo"] {
+  background-color: #e0a12b;
+}
+
+.tag[href^="#premium"] {
   background-color: #e0a12b;
 }
 
@@ -339,6 +343,10 @@ body .markdown-preview-view .red {
 body .markdown-preview-view .indianred {
   color: indianred !important;
 }
+body .markdown-preview-view code mjx-container {
+  color: #000;
+  font-size: 110%;
+}
 body .markdown-preview-view code.constant, body .markdown-preview-view code.linear, body .markdown-preview-view code.logarithmic, body .markdown-preview-view code.linearithmic, body .markdown-preview-view code.polynomial, body .markdown-preview-view code.exponential {
   color: #000;
 }
@@ -370,9 +378,13 @@ body .markdown-preview-view code.exponential {
 }
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-section,
-.markdown-source-view.is-readable-line-width .CodeMirror {
+.markdown-source-view.is-readable-line-width .cm-contentContainer {
   max-width: 900px !important;
   line-height: 26px;
+}
+.markdown-preview-view.is-readable-line-width .markdown-preview-section .cm-content,
+.markdown-source-view.is-readable-line-width .cm-contentContainer .cm-content {
+  max-width: 100%;
 }
 
 .workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
@@ -505,7 +517,7 @@ body .markdown-preview-view code.exponential {
 mjx-container[jax=CHTML] {
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: 1.2em;
   color: #98c379;
 }
 mjx-container[jax=CHTML] .mjx-c3A,

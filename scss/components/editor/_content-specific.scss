@@ -20,6 +20,10 @@
 
   // Time/Spatial Complexity
   code {
+    & mjx-container {
+      color: $black;
+      font-size: 110%;
+    }
     &.constant,
     &.linear,
     &.logarithmic,
