@@ -38,13 +38,13 @@ body .markdown-preview-view :not(pre) > code:not([class]) {
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
 .cm-s-obsidian .markdown-preview-view code {
-  color: #dcddde;
+  color: #98c379;
 }
 .cm-s-obsidian span .cm-inline-code,
 .cm-s-obsidian span .cm-math,
 .cm-s-obsidian span .hmd-fold-math-placeholder {
   font-style: normal;
-  color: #98c379;
+  color: #98c379 !important;
 }
 
 .cm-header-1,
@@ -384,7 +384,7 @@ body .markdown-preview-view code.exponential {
 }
 .markdown-preview-view.is-readable-line-width .markdown-preview-section .cm-content,
 .markdown-source-view.is-readable-line-width .cm-contentContainer .cm-content {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 .markdown-preview-view.is-readable-line-width .markdown-preview-section .cm-content .cm-line,
 .markdown-source-view.is-readable-line-width .cm-contentContainer .cm-content .cm-line {

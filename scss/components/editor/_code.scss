@@ -42,7 +42,7 @@
   span.cm-inline-code,
   span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
   .markdown-preview-view code {
-    color: $white;
+    color: $green;
   }
 
   span {
@@ -50,7 +50,7 @@
     .cm-math,
     .hmd-fold-math-placeholder {
       font-style: normal;
-      color: $green;
+      color: $green !important;
     }
   }
 }
