@@ -2,27 +2,27 @@
 
 .cm-header-1,
 .markdown-preview-view h1 {
-  @include weight-size-color(550, $font-size-h1, var(--text-title-h1));
+    @include weight-size-color(550, $font-size-h1, var(--text-title-h1));
 }
 .cm-header-2,
 .markdown-preview-view h2 {
-  @include weight-size-color(500, $font-size-h2, var(--text-title-h2));
+    @include weight-size-color(500, $font-size-h2, var(--text-title-h2));
 }
 .cm-header-3,
 .markdown-preview-view h3 {
-  @include weight-size-color(500, $font-size-h3, var(--text-title-h3));
+    @include weight-size-color(500, $font-size-h3, var(--text-title-h3));
 }
 .cm-header-4,
 .markdown-preview-view h4 {
-  @include weight-size-color(500, $font-size-h4, var(--text-title-h4));
+    @include weight-size-color(500, $font-size-h4, var(--text-title-h4));
 }
 .cm-header-5,
 .markdown-preview-view h5 {
-  @include weight-size-color(500, $font-size-h5, var(--text-title-h5));
+    @include weight-size-color(500, $font-size-h5, var(--text-title-h5));
 }
 .cm-header-6,
 .markdown-preview-view h6 {
-  @include weight-size-color(500, $font-size-h6, var(--text-title-h6));
+    @include weight-size-color(500, $font-size-h6, var(--text-title-h6));
 }
 
 .markdown-preview-section:not(:first-child) h1,
@@ -31,5 +31,5 @@
 .markdown-preview-section:not(:first-child) h4,
 .markdown-preview-section:not(:first-child) h5,
 .markdown-preview-section:not(:first-child) h6 {
-  margin-top: 40px !important;
+    margin-top: 40px !important;
 }

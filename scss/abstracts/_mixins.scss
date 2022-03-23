@@ -1,32 +1,32 @@
 @mixin weight-size-color($weight, $size, $color) {
-  font-weight: $weight !important;
-  font-size: $size !important;
-  color: $color !important;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
 }
 
 @mixin ui-component {
-  body {
-    @content;
-  }
+    body {
+        @content;
+    }
 }
 
 @mixin editor-preview-component {
-  body .markdown-preview-view {
-    @content;
-  }
+    body .markdown-preview-view {
+        @content;
+    }
 }
 
 @mixin editor-source-component {
-  body .markdown-source-view {
-    @content;
-  }
+    body .markdown-source-view {
+        @content;
+    }
 }
 
 @mixin editor-source-and-preview-component {
-  body {
-    .markdown-source-view,
-    .markdown-preview-view {
-      @content;
+    body {
+        .markdown-source-view,
+        .markdown-preview-view {
+            @content;
+        }
     }
-  }
 }
