@@ -1,5 +1,5 @@
 @mixin weight-size-color($weight, $size, $color) {
-    font-weight: $weight;
+    font-weight: $weight !important;
     font-size: $size;
     color: $color;
 }
