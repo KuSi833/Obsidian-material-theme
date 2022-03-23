@@ -1,58 +1,58 @@
 @use '../../abstracts' as *;
 
 @include editor-source-and-preview-component {
-  code,
-  pre {
-    // color: $green !important;
-    font-family: var(--font-monospace);
-    background-color: var(--background-primary-alt);
-    border-radius: 2.5px;
-    // padding: 1em; // Was messing up the first line of code
-    font-size: 0.95em;
-    text-align: left !important;
+    code,
+    pre {
+        // color: $green !important;
+        font-family: var(--font-monospace);
+        background-color: var(--background-primary-alt);
+        border-radius: 2.5px;
+        // padding: 1em; // Was messing up the first line of code
+        font-size: 0.95em;
+        text-align: left !important;
 
-    // white-space: pre !important; // Was messing with word wrapping
-    word-spacing: normal !important;
-    word-break: normal !important;
-    word-wrap: normal !important;
-    line-height: 1.5 !important;
-    -moz-tab-size: 4 !important;
-    -o-tab-size: 4 !important;
-    tab-size: 4 !important;
-    -webkit-hyphens: none !important;
-    -moz-hyphens: none !important;
-    -ms-hyphens: none !important;
-    hyphens: none !important;
-  }
-  // Inline Code Only
-  :not(pre) > code {
-    padding: 0.1em 0.2em;
-    white-space: normal;
-
-    // Classles
-    &:not([class]) {
-      color: $green !important;
+        // white-space: pre !important; // Was messing with word wrapping
+        word-spacing: normal !important;
+        word-break: normal !important;
+        word-wrap: normal !important;
+        line-height: 1.5 !important;
+        -moz-tab-size: 4 !important;
+        -o-tab-size: 4 !important;
+        tab-size: 4 !important;
+        -webkit-hyphens: none !important;
+        -moz-hyphens: none !important;
+        -ms-hyphens: none !important;
+        hyphens: none !important;
     }
-  }
+    // Inline Code Only
+    :not(pre) > code {
+        padding: 0.1em 0.2em;
+        white-space: normal;
+
+        // Classles
+        &:not([class]) {
+            color: $green !important;
+        }
+    }
 }
 
 // In edit mode
-.cm-s-obsidian {
-  pre.HyperMD-codeblock,
-  span.cm-inline-code,
-  span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
-  .markdown-preview-view code {
-    color: $white;
-  }
-
-  span {
-    .cm-inline-code,
-    .cm-math,
-    .hmd-fold-math-placeholder {
-      font-style: normal;
-      color: $green;
+.markdown-source-view {
+    pre.HyperMD-codeblock,
+    span.cm-inline-code,
+    span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+    .markdown-preview-view code {
+        color: $green;
     }
-  }
+
+    span {
+        .cm-inline-code,
+        .cm-math,
+        .hmd-fold-math-placeholder {
+            font-style: normal;
+            color: $green;
+        }
+    }
 }
 
 // Could turn out to be useful? Right know can't figure out usage.
