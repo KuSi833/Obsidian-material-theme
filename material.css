@@ -34,15 +34,15 @@ body .markdown-preview-view :not(pre) > code:not([class]) {
   color: #98c379 !important;
 }
 
-.cm-s-obsidian pre.HyperMD-codeblock,
-.cm-s-obsidian span.cm-inline-code,
-.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
-.cm-s-obsidian .markdown-preview-view code {
-  color: #dcddde;
+.markdown-source-view pre.HyperMD-codeblock,
+.markdown-source-view span.cm-inline-code,
+.markdown-source-view span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.markdown-source-view .markdown-preview-view code {
+  color: #98c379;
 }
-.cm-s-obsidian span .cm-inline-code,
-.cm-s-obsidian span .cm-math,
-.cm-s-obsidian span .hmd-fold-math-placeholder {
+.markdown-source-view span .cm-inline-code,
+.markdown-source-view span .cm-math,
+.markdown-source-view span .hmd-fold-math-placeholder {
   font-style: normal;
   color: #98c379;
 }
@@ -196,6 +196,10 @@ li {
   background-color: indianred;
 }
 
+.tag[href^="#math"] {
+  background-color: #cf352e;
+}
+
 .tag[href^="#solved"] {
   background-color: #68ad37;
 }
@@ -225,6 +229,13 @@ body .markdown-preview-view blockquote {
   border-radius: 4px;
   padding: 0.5em 1em;
   background-color: var(--background-primary-alt);
+}
+body .markdown-preview-view blockquote li {
+  list-style-type: none;
+}
+body .markdown-preview-view blockquote p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body .markdown-preview-view .task-list-item-checkbox {
@@ -371,7 +382,6 @@ body .markdown-preview-view code.exponential {
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-section,
 .markdown-source-view.is-readable-line-width .CodeMirror {
-  max-width: 900px !important;
   line-height: 26px;
 }
 

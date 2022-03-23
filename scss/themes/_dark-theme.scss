@@ -2,47 +2,47 @@
 
 :root,
 .theme-dark {
-  --background-primary: #{$gray-3}; /*background of note*/
-  --background-primary-alt: #{$gray-4}; /*Code block*/
-  --background-secondary: #{$gray-5}; /*file viewer*/
-  --background-secondary-alt: #{$gray-6}; /*sidebar*/
-  --background-accent: #{$black};
-  --background-modifier-border: #{$gray-7};
-  --background-modifier-form-field: #{$dark-gray-1};
-  --background-modifier-form-field-highlighted: #{$dark-gray-2};
-  --background-modifier-box-shadow: #{$dark-gray-1};
-  --background-modifier-success: #{$green-2};
-  /* Delete promt buttons */
-  --background-modifier-error: #{$accent-purple};
-  --background-modifier-error-rgb: #{$red-2};
-  --background-modifier-error-hover: #{$red};
-  --background-modifier-cover: #{$dark-gray-3};
-  /*"New note" and other icons hover, also hyperlinks*/
-  --text-accent: #{$accent-blue};
-  --text-accent-hover: #{$hover-blue};
-  --text-normal: #{$white};
-  --text-muted: #{$gray-8}; /* File viewer text */
-  --text-faint: #{$gray-9}; /* Sidebar Icons */
-  --text-error: #{$red-3};
-  --text-error-hover: #{$red-4};
-  --text-highlight-bg: #{$green-3};
-  --text-selection: #{$dark-blue};
-  --text-on-accent: #{$white};
-  --interactive-normal: #{$gray-10};
-  --interactive-hover: #{$gray-11};
-  /*highlited open note in file viewer*/
-  --interactive-accent: #{$accent-blue};
-  --interactive-accent-rgb: #{$blue-2};
-  --interactive-accent-hover: #{$blue-3};
-  --scrollbar-active-thumb-bg: #{$red-5};
-  --scrollbar-bg: #{$gray-12};
-  --scrollbar-thumb-bg: #{$gray-13};
-  --panel-border-color: #{$gray-14};
+    --background-primary: #{$gray-3}; /*background of note*/
+    --background-primary-alt: #{$gray-4}; /*Code block*/
+    --background-secondary: #{$gray-5}; /*file viewer*/
+    --background-secondary-alt: #{$gray-6}; /*sidebar*/
+    --background-accent: #{$black};
+    --background-modifier-border: #{$gray-7};
+    --background-modifier-form-field: #{$dark-gray-1};
+    --background-modifier-form-field-highlighted: #{$dark-gray-2};
+    --background-modifier-box-shadow: #{$dark-gray-1};
+    --background-modifier-success: #{$green-2};
+    /* Delete promt buttons */
+    --background-modifier-error: #{$accent-purple};
+    --background-modifier-error-rgb: #{$red-2};
+    --background-modifier-error-hover: #{$red};
+    --background-modifier-cover: #{$dark-gray-3};
+    /*"New note" and other icons hover, also hyperlinks*/
+    --text-accent: #{$accent-blue};
+    --text-accent-hover: #{$hover-blue};
+    --text-normal: #{$white};
+    --text-muted: #{$gray-8}; /* File viewer text */
+    --text-faint: #{$gray-9}; /* Sidebar Icons */
+    --text-error: #{$red-3};
+    --text-error-hover: #{$red-4};
+    --text-highlight-bg: #{$green-3};
+    --text-selection: #{$dark-blue};
+    --text-on-accent: #{$white};
+    --interactive-normal: #{$gray-10};
+    --interactive-hover: #{$gray-11};
+    /*highlited open note in file viewer*/
+    --interactive-accent: #{$accent-blue};
+    --interactive-accent-rgb: #{$blue-2};
+    --interactive-accent-hover: #{$blue-3};
+    --scrollbar-active-thumb-bg: #{$red-5};
+    --scrollbar-bg: #{$gray-12};
+    --scrollbar-thumb-bg: #{$gray-13};
+    --panel-border-color: #{$gray-14};
 
-  --text-title-h1: #{$accent-blue};
-  --text-title-h2: #{$accent-purple};
-  --text-title-h3: #{$yellow};
-  --text-title-h4: #{$green};
-  --text-title-h5: #{$green};
-  --text-title-h6: #{$green};
+    --text-title-h1: #{$accent-blue};
+    --text-title-h2: #{$accent-purple};
+    --text-title-h3: #{$yellow};
+    --text-title-h4: #{$green};
+    --text-title-h5: #{$green};
+    --text-title-h6: #{$green};
 }

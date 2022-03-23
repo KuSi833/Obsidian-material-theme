@@ -1,41 +1,41 @@
 //  Content width
 .markdown-preview-view.is-readable-line-width .markdown-preview-section,
 .markdown-source-view.is-readable-line-width .CodeMirror {
-  max-width: 900px !important;
-  line-height: 26px;
+    // max-width: 900px !important;
+    line-height: 26px;
 }
 
 // Is likely overridden by Sliding Panels
 .workspace
-  > .workspace-split
-  > .workspace-leaf:first-of-type:last-of-type
-  .view-header {
-  border: none;
+    > .workspace-split
+    > .workspace-leaf:first-of-type:last-of-type
+    .view-header {
+    border: none;
 }
 
 // Element: Note
 .workspace-leaf {
-  // Element: Active
-  &.mod-active {
-    // Element: Header
-    .view-header {
-      // Purpose: Bottom border color transition
-      transition: border-bottom 0.3s;
-      border-bottom: 2px solid var(--interactive-accent);
-      // Element: Icon
-      .view-header-icon {
-        // Purpose: COlor
-        color: var(--file-name-color);
-      }
+    // Element: Active
+    &.mod-active {
+        // Element: Header
+        .view-header {
+            // Purpose: Bottom border color transition
+            transition: border-bottom 0.3s;
+            border-bottom: 2px solid var(--interactive-accent);
+            // Element: Icon
+            .view-header-icon {
+                // Purpose: COlor
+                color: var(--file-name-color);
+            }
+        }
     }
-  }
-  .view-header-icon:hover {
-    color: var(--interactive-accent);
-  }
+    .view-header-icon:hover {
+        color: var(--interactive-accent);
+    }
 }
 
 // Community plugin tab
 .modal-content.community-plugin {
-  // Scroll-bar was overlapping with X
-  padding-right: 0em;
+    // Scroll-bar was overlapping with X
+    padding-right: 0em;
 }

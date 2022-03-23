@@ -1,89 +1,94 @@
 @use '../../abstracts' as *;
 
 .tag {
-  background-color: var(--text-accent);
-  border: none;
-  color: white;
-  font-size: $font-size-h6;
-  padding: 1px 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0px 0px;
-  cursor: pointer;
-  border-radius: 14px;
+    background-color: var(--text-accent);
+    border: none;
+    color: white;
+    font-size: $font-size-h6;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 14px;
 }
 .tag:hover {
-  border: none;
-  background-color: var(--text-accent-hover) !important;
-  padding: 1px 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0px 0px;
-  cursor: pointer;
-  color: $white;
-  border-radius: 14px;
+    border: none;
+    background-color: var(--text-accent-hover) !important;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    color: $white;
+    border-radius: 14px;
 }
 .tag[href^='#obsidian'] {
-  background-color: #4d3ca6;
+    background-color: #4d3ca6;
 }
 .tag[href^='#issue'] {
-  background-color: indianred;
+    background-color: indianred;
 }
 .tag[href^='#🌱'] {
-  background-color: yellowgreen;
+    background-color: yellowgreen;
 }
 .tag[href^='#🌿'] {
-  background-color: seagreen;
+    background-color: seagreen;
 }
 .tag[href^='#🌲'] {
-  background-color: green;
+    background-color: green;
 }
 .tag[href^='#📍'] {
-  background-color: $red-6;
+    background-color: $red-6;
 }
 .tag[href^='#🧍'] {
-  background-color: #109474;
+    background-color: #109474;
 }
 .tag[href^='#🍽'] {
-  background-color: orange;
+    background-color: orange;
 }
 .tag[href^='#🛠'] {
-  background-color: #63462d;
+    background-color: #63462d;
 }
 .tag[href^='#⚙️'] {
-  background-color: $gray-1;
+    background-color: $gray-1;
 }
 .tag[href^='#📑'] {
-  background-color: $accent-purple;
+    background-color: $accent-purple;
 }
 .tag[href^='#🎯'] {
-  background-color: $red-6;
+    background-color: $red-6;
 }
 .tag[href^='#active'] {
-  background-color: #6ba741;
+    background-color: #6ba741;
 }
 .tag[href^='#inactive'] {
-  background-color: indianred;
+    background-color: indianred;
+}
+
+// Topical
+.tag[href^='#math'] {
+    background-color: $red-6;
 }
 
 // Leetcode Tags
 .tag[href^='#solved'] {
-  background-color: $green-2;
+    background-color: $green-2;
 }
 .tag[href^='#todo'] {
-  background-color: $yellow-2;
+    background-color: $yellow-2;
 }
 .tag[href^='#unsolved'] {
-  background-color: $red;
+    background-color: $red;
 }
 .tag[href^='#easy'] {
-  background-color: $green-2;
+    background-color: $green-2;
 }
 .tag[href^='#medium'] {
-  background-color: $yellow-2;
+    background-color: $yellow-2;
 }
 .tag[href^='#hard'] {
-  background-color: $red;
+    background-color: $red;
 }
