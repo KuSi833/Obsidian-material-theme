@@ -1,7 +1,7 @@
 @mixin weight-size-color($weight, $size, $color) {
-  font-weight: $weight;
-  font-size: $size;
-  color: $color;
+  font-weight: $weight !important;
+  font-size: $size !important;
+  color: $color !important;
 }
 
 @mixin ui-component {

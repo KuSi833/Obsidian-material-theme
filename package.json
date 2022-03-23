@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm-run-all --parallel sass copy",
     "sass": "sass --watch scss:.",
-    "copy": "copy-and-watch --watch material.css \"C:\\Sync\\ObsiNotes\\.obsidian\\themes\""
+    "copy": "copy-and-watch --watch material.css \"F:\\Sync\\ObsiNotes\\.obsidian\\themes\""
   },
   "keywords": [
     "Obsidian",

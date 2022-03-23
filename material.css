@@ -49,44 +49,44 @@ body .markdown-preview-view :not(pre) > code:not([class]) {
 
 .cm-header-1,
 .markdown-preview-view h1 {
-  font-weight: 550;
-  font-size: 2em;
-  color: var(--text-title-h1);
+  font-weight: 550 !important;
+  font-size: 3.4vh !important;
+  color: var(--text-title-h1) !important;
 }
 
 .cm-header-2,
 .markdown-preview-view h2 {
-  font-weight: 500;
-  font-size: 1.5em;
-  color: var(--text-title-h2);
+  font-weight: 500 !important;
+  font-size: 2.5vh !important;
+  color: var(--text-title-h2) !important;
 }
 
 .cm-header-3,
 .markdown-preview-view h3 {
-  font-weight: 500;
-  font-size: 1.2em;
-  color: var(--text-title-h3);
+  font-weight: 500 !important;
+  font-size: 2vh !important;
+  color: var(--text-title-h3) !important;
 }
 
 .cm-header-4,
 .markdown-preview-view h4 {
-  font-weight: 500;
-  font-size: 1.2em;
-  color: var(--text-title-h4);
+  font-weight: 500 !important;
+  font-size: 2vh !important;
+  color: var(--text-title-h4) !important;
 }
 
 .cm-header-5,
 .markdown-preview-view h5 {
-  font-weight: 500;
-  font-size: 1em;
-  color: var(--text-title-h5);
+  font-weight: 500 !important;
+  font-size: 2vh !important;
+  color: var(--text-title-h5) !important;
 }
 
 .cm-header-6,
 .markdown-preview-view h6 {
-  font-weight: 500;
-  font-size: 0.8em;
-  color: var(--text-title-h6);
+  font-weight: 500 !important;
+  font-size: 1.2vh !important;
+  color: var(--text-title-h6) !important;
 }
 
 .markdown-preview-section:not(:first-child) h1,
@@ -117,7 +117,7 @@ li {
   background-color: var(--text-accent);
   border: none;
   color: white;
-  font-size: 0.8em;
+  font-size: 1.2vh;
   padding: 1px 8px;
   text-align: center;
   text-decoration: none;
@@ -172,6 +172,10 @@ li {
   background-color: orange;
 }
 
+.tag[href^="#item"] {
+  background-color: #4caf50;
+}
+
 .tag[href^="#🛠"] {
   background-color: #63462d;
 }
@@ -205,6 +209,10 @@ li {
 }
 
 .tag[href^="#todo"] {
+  background-color: #e0a12b;
+}
+
+.tag[href^="#premium"] {
   background-color: #e0a12b;
 }
 
@@ -515,7 +523,7 @@ body .markdown-preview-view code.exponential {
 mjx-container[jax=CHTML] {
   text-align: left;
   outline: none;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #98c379;
 }
 mjx-container[jax=CHTML] .mjx-c3A,
