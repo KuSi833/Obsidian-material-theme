@@ -1,3 +1,5 @@
+@use '../../abstracts/' as *;
+
 //  Content width
 .markdown-preview-view.is-readable-line-width .markdown-preview-section,
 .markdown-source-view.is-readable-line-width .CodeMirror {
@@ -17,17 +19,20 @@
 // }
 
 // Is likely overridden by Sliding Panels
-.workspace
-    > .workspace-split
-    > .workspace-leaf:first-of-type:last-of-type
-    .view-header {
-    border: none;
-}
+// .workspace
+//     > .workspace-split
+//     > .workspace-leaf:first-of-type:last-of-type
+//     .view-header {
+//     border: none;
+// }
 
 // Element: Note
 .workspace-leaf {
+    // border: 0px !important;
     // Element: Active
     &.mod-active {
+        transition: background-color 0.2s;
+        background-color: var(--background-primary-alt);
         // Element: Header
         .view-header {
             // Purpose: Bottom border color transition
@@ -35,7 +40,7 @@
             border-bottom: 2px solid var(--interactive-accent);
             // Element: Icon
             .view-header-icon {
-                // Purpose: COlor
+                // Purpose: Color
                 color: var(--file-name-color);
             }
         }
