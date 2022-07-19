@@ -50,43 +50,43 @@ body .markdown-preview-view :not(pre) > code:not([class]) {
 .cm-header-1,
 .markdown-preview-view h1 {
   font-weight: 550 !important;
-  font-size: 3.4vh !important;
-  color: var(--text-title-h1) !important;
+  font-size: 2em;
+  color: var(--text-title-h1);
 }
 
 .cm-header-2,
 .markdown-preview-view h2 {
   font-weight: 500 !important;
-  font-size: 2.5vh !important;
-  color: var(--text-title-h2) !important;
+  font-size: 1.5em;
+  color: var(--text-title-h2);
 }
 
 .cm-header-3,
 .markdown-preview-view h3 {
   font-weight: 500 !important;
-  font-size: 2vh !important;
-  color: var(--text-title-h3) !important;
+  font-size: 1.2em;
+  color: var(--text-title-h3);
 }
 
 .cm-header-4,
 .markdown-preview-view h4 {
   font-weight: 500 !important;
-  font-size: 2vh !important;
-  color: var(--text-title-h4) !important;
+  font-size: 1.2em;
+  color: var(--text-title-h4);
 }
 
 .cm-header-5,
 .markdown-preview-view h5 {
   font-weight: 500 !important;
-  font-size: 2vh !important;
-  color: var(--text-title-h5) !important;
+  font-size: 1em;
+  color: var(--text-title-h5);
 }
 
 .cm-header-6,
 .markdown-preview-view h6 {
   font-weight: 500 !important;
-  font-size: 1.2vh !important;
-  color: var(--text-title-h6) !important;
+  font-size: 0.8em;
+  color: var(--text-title-h6);
 }
 
 .markdown-preview-section:not(:first-child) h1,
@@ -117,7 +117,7 @@ li {
   background-color: var(--text-accent);
   border: none;
   color: white;
-  font-size: 1.2vh;
+  font-size: 0.8em;
   padding: 1px 8px;
   text-align: center;
   text-decoration: none;
@@ -393,10 +393,10 @@ body .markdown-preview-view code.exponential {
   line-height: 26px;
 }
 
-.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
-  border: none;
+.workspace-leaf.mod-active {
+  transition: background-color 0.2s;
+  background-color: var(--background-primary-alt);
 }
-
 .workspace-leaf.mod-active .view-header {
   transition: border-bottom 0.3s;
   border-bottom: 2px solid var(--interactive-accent);
@@ -502,6 +502,10 @@ body .markdown-preview-view code.exponential {
 }
 .workspace-tabs .workspace-tab-header-container .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
   color: var(--text-accent);
+}
+
+.workspace-leaf.mod-active {
+  border-color: transparent !important;
 }
 
 .workspace-leaf-resize-handle {
